@@ -1,0 +1,4 @@
+[plugin]
+description = "dokku zebrafy"
+version = "0.1.1"
+[plugin.config]
