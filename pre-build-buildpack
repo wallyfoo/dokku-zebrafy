@@ -4,6 +4,7 @@ set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 APP="$1"; IMAGE="dokku/$APP"
 echo "-----> Installing zebrafy ..."
 COMMAND=$(cat <<EOF
+apt-get -y  update
 apt-get -y install python3-pip
 pip -y install zebrafy
 echo "-----> Zebrafy installed!"
